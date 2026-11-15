@@ -1,0 +1,54 @@
+{
+  "config": {
+    "pdm_fs": 2500000,
+    "pcm_fs": 50000,
+    "decimation": 50,
+    "microphones": 16,
+    "spacing": 0.04,
+    "sound_speed": 343.0,
+    "numtaps": 2001,
+    "cutoff": 20000.0,
+    "beta": 8.6,
+    "frame_size": 4096,
+    "nfft": 8192,
+    "hop": 1024,
+    "freq_min": 300.0,
+    "freq_max": 4000.0,
+    "angle_step": 0.25,
+    "bin_relative_threshold": 0.01,
+    "noise_multiplier": 3.0,
+    "minimum_coherence": 0.4,
+    "window_seconds": 0.5,
+    "hop_seconds": 0.25
+  },
+  "start": 0.0,
+  "stop": null,
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "source_clock": "nominal, corroborated by ../pdm_udp.py; no per-capture clock log",
+  "masks": "energy >=3x per-frequency temporal 20th percentile; SNR >=1% frame max; local adjacent coherence >=0.4 over 3 frames x 5 bins; common weights proportional to excess SNR",
+  "ambiguity": "second local maximum >=5 degrees away; floor-subtracted ratio >=0.9",
+  "packet_size": "inferred independently from exact interleaved frame count / mask length",
+  "sweep_detection": {
+    "continuous": {
+      "snr_min": 12,
+      "maximum_slope_hz_s": 6000,
+      "minimum_duration_s": 0.5,
+      "minimum_excursion_hz": 1000,
+      "maximum_missing_frames": 2
+    },
+    "stepped": {
+      "snr_min": 12,
+      "top_five_bin_excess_snr_fraction_min": 0.35,
+      "minimum_plateau_frames": 3,
+      "maximum_plateau_span_fft_bins": 2,
+      "minimum_plateaus": 2,
+      "minimum_excursion_hz": 1000
+    },
+    "fallback": "all activity, with explicit sweep_not_confirmed flag"
+  },
+  "temporal_instability_warning_std_deg": 10,
+  "evaluation_exclusions": {
+    "noise_0st_10m": "B\u0142\u0119dnie wykonane nagranie \u2014 potwierdzone przez u\u017cytkownika."
+  }
+}

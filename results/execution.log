@@ -1,0 +1,30 @@
+Processing chirp_+60st_10m
+chirp_+60st_10m estimated;temporally_unstable DAS 64.25 SRP 64.75
+Processing chirp_-30st_10m
+chirp_-30st_10m estimated;temporally_unstable DAS -31.25 SRP -31.0
+Processing chirp_-45st_10m
+chirp_-45st_10m estimated;temporally_unstable DAS -49.0 SRP -48.75
+Processing chirp_0st_10m
+chirp_0st_10m estimated;temporally_unstable DAS 2.0 SRP 2.0
+Processing noise_+60st_10m
+noise_+60st_10m estimated;temporally_unstable DAS 63.75 SRP 63.75
+Processing noise_-30st_10m
+noise_-30st_10m estimated DAS -31.0 SRP -31.0
+Processing noise_-45st_10m
+noise_-45st_10m estimated DAS -49.5 SRP -49.25
+Processing noise_0st_10m
+noise_0st_10m estimated;temporally_unstable DAS 1.5 SRP -78.25
+Processing noise_3_0st_10m
+noise_3_0st_10m estimated;channel_warning DAS 0.5 SRP 0.25
+Processing sweep_+60st_10m
+sweep_+60st_10m estimated DAS 63.5 SRP 63.5
+Processing sweep_-30st_10m
+sweep_-30st_10m estimated;temporally_unstable DAS -31.5 SRP -31.5
+Processing sweep_-45st_10m
+sweep_-45st_10m estimated;temporally_unstable DAS -49.0 SRP -49.25
+Processing sweep_0st_10m
+sweep_0st_10m estimated;temporally_unstable DAS 1.75 SRP 1.75
+      method      mae      rmse  median_absolute_error  p90_absolute_error  analyzed  ambiguous  temporally_unstable  rejected
+         das 2.576923  2.922065                   2.00                4.20        13          0                    9         0
+         srp 8.461538 21.897488                   3.50                4.65        13          0                    9         0
+srp_neighbor 6.019231 11.234177                   2.75               10.40        13          0                    8         0

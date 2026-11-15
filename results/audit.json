@@ -1,0 +1,13 @@
+{
+  "original_files_rehashed": 247,
+  "modified_originals": [],
+  "recordings": 13,
+  "evaluation_included": 12,
+  "finite_das_results": 13,
+  "finite_srp_results": 13,
+  "baseline_rows": 195,
+  "expected_baseline_rows": 195,
+  "missing_artifacts": [],
+  "png_count": 107,
+  "passed": true
+}

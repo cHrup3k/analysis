@@ -1,0 +1,4 @@
+method,mae,rmse,median_absolute_error,p90_absolute_error,analyzed,excluded,ambiguous,temporally_unstable,rejected
+das,2.576923076923077,2.922064602034243,2.0,4.2,13,0,0,9,0
+srp,8.461538461538462,21.89748844045819,3.5,4.65,13,0,0,9,0
+srp_neighbor,6.019230769230769,11.234176906619851,2.75,10.400000000000002,13,0,0,8,0
